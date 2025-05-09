@@ -1,0 +1,20 @@
+/*
+InstagramFollow.css
+*/
+
+body.dark a.instagram:hover {
+    color: #f1f1f1;
+  }
+  
+  body.light a.instagram:hover {
+    color: #000000;
+  }
+  
+  a.instagram {
+    transition: transform 250ms ease;
+  }
+  
+  a.instagram:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+  }

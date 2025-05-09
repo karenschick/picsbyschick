@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: picsbyschick
+    env: node
+    buildCommand: cd packages/client && npm install && npm run build
+    staticPublishPath: packages/client/dist
+    buildFilter:
+      paths:
+        - packages/client/**

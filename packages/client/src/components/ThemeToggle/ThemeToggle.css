@@ -1,0 +1,31 @@
+
+  
+  .switch {
+    width: 120px;
+    height: 60px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch[data-is-on="true"] {
+    background-color: #444;
+  }
+  
+  .ball {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .toggle-label {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  

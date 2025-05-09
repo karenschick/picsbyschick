@@ -1,0 +1,152 @@
+/*app.css*/
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  color: white;
+}
+.carousel-padding-wrapper {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+
+.carousel-title-below {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.75rem;
+ 
+  color: "rgba(255, 255, 255, 0.6)",
+}
+.carousel-hover-title {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  
+}
+.carousel-hover-title.dark {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-hover-title.light {
+  color: rgba(0, 0, 0, 0.8);
+}
+.carousel-wrapper:hover .carousel-hover-title {
+  opacity: 1;
+}
+
+.card-title {
+  font-family: "Julius Sans One", sans-serif;
+  /* font-size: clamp(2.1rem, 3vw, 2.5rem); */
+  font-size: 6rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.8rem;
+  font-weight: thin;
+  color: white;
+}
+
+.card-text {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.carousel-image {
+  object-fit: cover;
+  width: 100%;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  transition: width 0.7s ease, height 0.7s ease, object-fit 0.7s ease;
+}
+.carousel-fade .carousel-item {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.02); /* subtle zoom out effect */
+  transition: opacity 0.6s ease-in-out, visibility 0s linear 0.6s,
+    transform 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1); /* zoom in to normal */
+  transition: opacity 0.6s ease-in-out, visibility 0s linear 0s,
+    transform 0.6s ease-in-out;
+  z-index: 2;
+}
+
+.portrait-page-carousel .carousel-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+.all-carousel .carousel-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.modal-header-dark .btn-close {
+  filter: invert(1); /* Inverts the close button to white */
+}
+
+.modal-header-light .btn-close {
+  filter: invert(0); /* Normal (black) */
+}
+
+.transparent-backdrop {
+  background-color: transparent !important;
+}
+.transparent-modal {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+  }
+
+  .card-subtitle {
+    font-size: 1.2rem; /* Adjust for smaller screens */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Adjust for smaller screens */
+  }
+}
+
+/* Responsive overrides */
+@media (max-width: 1024px) {
+  .portrait-card {
+    flex: 0 1 40%;
+  }
+
+  .landscape-card {
+    flex: 0 1 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portrait-card,
+  .landscape-card {
+    flex: 0 1 100%;
+  }
+}

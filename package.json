@@ -1,0 +1,20 @@
+{
+  "name": "picsbyschick",
+  "version": "1.0.0",
+  "description": "📸 PicsBySchick",
+  "main": "eslint.config.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=client\" \"node packages/server/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
