@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=client\" \"node packages/server/index.js\"",
+    "build": "npm --workspace packages/client run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
