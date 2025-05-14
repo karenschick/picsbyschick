@@ -5,14 +5,14 @@ const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 const wildlife = [
   {
     id: 1,
-    img: `${baseURL}/secure-image/wildloonbw.jpg`,
+    img: `${baseURL}/privatePhotos/wildloonbw.jpg`,
     title: "loon in bw",
     location: "new hampshire",
     link: "",
   },
   {
     id: 2,
-    img: `${baseURL}/secure-image/wildheron.jpg`,
+    img: `${baseURL}/privatePhotos/wildheron.jpg`,
     title: "heron",
     location: "new hampshire",
     link: "",
@@ -20,14 +20,14 @@ const wildlife = [
 
   {
     id: 3,
-    img: `${baseURL}/secure-image/wildbwbird.jpg`,
+    img: `${baseURL}/privatePhotos/wildbwbird.jpg`,
     title: "straddling life",
     location: "new hampshire",
     link: "",
   },
   {
     id: 4,
-    img: `${baseURL}/secure-image/wildloon.jpg`,
+    img: `${baseURL}/privatePhotos/wildloon.jpg`,
     title: "loon",
     location: "new hampshire",
     link: "",
@@ -35,14 +35,14 @@ const wildlife = [
 
   {
     id: 5,
-    img: `${baseURL}/secure-image/wilddegreen.jpg`,
+    img: `${baseURL}/privatePhotos/wilddegreen.jpg`,
     title: "hello",
     location: "new hampshire",
     link: "",
   },
   {
     id: 6,
-    img: `${baseURL}/secure-image/wildquack.jpg`,
+    img: `${baseURL}/privatePhotos/wildquack.jpg`,
     title: "quack quack",
     location: "new hampshire",
     link: "",
@@ -50,14 +50,14 @@ const wildlife = [
 
   {
     id: 7,
-    img: `${baseURL}/secure-image/wilddeer.jpg`,
+    img: `${baseURL}/privatePhotos/wilddeer.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 8,
-    img: `${baseURL}/secure-image/wildbirgreen.jpg`,
+    img: `${baseURL}/privatePhotos/wildbirgreen.jpg`,
     title: "bird",
     location: "new hampshire",
     link: "",
@@ -65,21 +65,21 @@ const wildlife = [
 
   {
     id: 9,
-    img: `${baseURL}/secure-image/wildgresq.jpg`,
+    img: `${baseURL}/privatePhotos/wildgresq.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 10,
-    img: `${baseURL}/secure-image/wildbuc.jpg`,
+    img: `${baseURL}/privatePhotos/wildbuc.jpg`,
     title: "wild buck",
     location: "new hampshire",
     link: "",
   },
   {
     id: 11,
-    img: `${baseURL}/secure-image/wildredsq.jpg`,
+    img: `${baseURL}/privatePhotos/wildredsq.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
@@ -87,7 +87,7 @@ const wildlife = [
 
   {
     id: 12,
-    img: `${baseURL}/secure-image/wildsnackheron.jpg`,
+    img: `${baseURL}/privatePhotos/wildsnackheron.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
@@ -95,7 +95,7 @@ const wildlife = [
 
   {
     id: 13,
-    img: `${baseURL}/secure-image/wildeertong.jpg`,
+    img: `${baseURL}/privatePhotos/wildeertong.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
@@ -103,7 +103,7 @@ const wildlife = [
 
   {
     id: 14,
-    img: `${baseURL}/secure-image/wildtufted.jpg`,
+    img: `${baseURL}/privatePhotos/wildtufted.jpg`,
     title: "tufted",
     location: "new hampshire",
     link: "",
@@ -111,7 +111,7 @@ const wildlife = [
 
   {
     id: 15,
-    img: `${baseURL}/secure-image/wildbunnyup.jpg`,
+    img: `${baseURL}/privatePhotos/wildbunnyup.jpg`,
     title: "bunny",
     location: "new hampshire",
     link: "",
@@ -119,7 +119,7 @@ const wildlife = [
 
   {
     id: 16,
-    img: `${baseURL}/secure-image/wildpeekbun.jpg`,
+    img: `${baseURL}/privatePhotos/wildpeekbun.jpg`,
     title: "peekaboo",
     location: "new hampshire",
     link: "",
@@ -127,14 +127,14 @@ const wildlife = [
 
   {
     id: 17,
-    img: `${baseURL}/secure-image/wildrobin.jpg`,
+    img: `${baseURL}/privatePhotos/wildrobin.jpg`,
     title: "robin",
     location: "new hampshire",
     link: "",
   },
   {
     id: 18,
-    img: `${baseURL}/secure-image/wildrobindark.jpg`,
+    img: `${baseURL}/privatePhotos/wildrobindark.jpg`,
     title: "dark robin",
     location: "new hampshire",
     link: "",
@@ -142,7 +142,7 @@ const wildlife = [
 
   {
     id: 19,
-    img: `${baseURL}/secure-image/wildturtjoy.jpg`,
+    img: `${baseURL}/privatePhotos/wildturtjoy.jpg`,
     title: "turtle joy",
     location: "new hampshire",
     link: "",
@@ -151,7 +151,7 @@ const wildlife = [
 
   {
     id: 21,
-    img: `${baseURL}/secure-image/wildlooflap.jpg`,
+    img: `${baseURL}/privatePhotos/wildlooflap.jpg`,
     title: "shake it off",
     location: "new hampshire",
     link: "",
@@ -159,7 +159,7 @@ const wildlife = [
 
   {
     id: 22,
-    img: `${baseURL}/secure-image/wildflaploo.jpg`,
+    img: `${baseURL}/privatePhotos/wildflaploo.jpg`,
     title: "shake it",
     location: "new hampshire",
     link: "",
@@ -167,7 +167,7 @@ const wildlife = [
 
   {
     id: 23,
-    img: `${baseURL}/secure-image/wildloonsun.jpg`,
+    img: `${baseURL}/privatePhotos/wildloonsun.jpg`,
     title: "sunset",
     location: "new hampshire",
     link: "",

@@ -4,13 +4,13 @@ import React, { useEffect, useState } from "react";
 const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 
 const images = [
-  `${baseURL}/secure-image/wildloonbw.jpg`,
-  `${baseURL}/secure-image/landfog.jpg`,
-  `${baseURL}/secure-image/flower.jpg`,
-  `${baseURL}/secure-image/flowdarkyell.jpg`,
-  `${baseURL}/secure-image/landva.jpg`,
-  `${baseURL}/secure-image/landstjbw.jpg`,
-  `${baseURL}/secure-image/landwinskate.jpg`,
+  `${baseURL}/privatePhotos/wildloonbw.jpg`,
+  `${baseURL}/privatePhotos/landfog.jpg`,
+  `${baseURL}/privatePhotos/flower.jpg`,
+  `${baseURL}/privatePhotos/flowdarkyell.jpg`,
+  `${baseURL}/privatePhotos/landva.jpg`,
+  `${baseURL}/privatePhotos/landstjbw.jpg`,
+  `${baseURL}/privatePhotos/landwinskate.jpg`,
 ];
 
 const BackgroundCarousel = ({ zIndex = -1 }) => {

@@ -5,21 +5,21 @@ const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 const flower = [
   {
     id: 1,
-    img: `${baseURL}/secure-image/flower.jpg`,
+    img: `${baseURL}/privatePhotos/flower.jpg`,
     title: "daylily in the dark",
     location: "new hampshire",
     link: "",
   },
   {
     id: 2,
-    img: `${baseURL}/secure-image/flowlilacdark.jpg`,
+    img: `${baseURL}/privatePhotos/flowlilacdark.jpg`,
     title: "lilac",
     location: "new hampshire",
     link: "",
   },
   {
     id: 3,
-    img: `${baseURL}/secure-image/flowcone.jpg`,
+    img: `${baseURL}/privatePhotos/flowcone.jpg`,
     title: "cone flower",
     location: "new hampshire",
     link: "",
@@ -27,7 +27,7 @@ const flower = [
 
   {
     id: 4,
-    img: `${baseURL}/secure-image/flowdarkyell.jpg`,
+    img: `${baseURL}/privatePhotos/flowdarkyell.jpg`,
     title: "daylily in the dark",
     location: "new hampshire",
     link: "",
@@ -35,35 +35,35 @@ const flower = [
 
   {
     id: 5,
-    img: `${baseURL}/secure-image/flowdaiblur.jpg`,
+    img: `${baseURL}/privatePhotos/flowdaiblur.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 6,
-    img: `${baseURL}/secure-image/flowlil.jpg`,
+    img: `${baseURL}/privatePhotos/flowlil.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 7,
-    img: `${baseURL}/secure-image/flowred.jpg`,
+    img: `${baseURL}/privatePhotos/flowred.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 8,
-    img: `${baseURL}/secure-image/flowmush.jpg`,
+    img: `${baseURL}/privatePhotos/flowmush.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 9,
-    img: `${baseURL}/secure-image/flowpinkflower.jpg`,
+    img: `${baseURL}/privatePhotos/flowpinkflower.jpg`,
     title: "pink flower",
     location: "new hampshire",
     link: "",
@@ -71,7 +71,7 @@ const flower = [
 
   {
     id: 10,
-    img: `${baseURL}/secure-image/flowyell.jpg`,
+    img: `${baseURL}/privatePhotos/flowyell.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
@@ -79,14 +79,14 @@ const flower = [
 
   {
     id: 11,
-    img: `${baseURL}/secure-image/flowbeeblur.jpg`,
+    img: `${baseURL}/privatePhotos/flowbeeblur.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 12,
-    img: `${baseURL}/secure-image/flowbee.jpg`,
+    img: `${baseURL}/privatePhotos/flowbee.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
@@ -94,7 +94,7 @@ const flower = [
 
   {
     id: 13,
-    img: `${baseURL}/secure-image/flowcoraldew.jpg`,
+    img: `${baseURL}/privatePhotos/flowcoraldew.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
@@ -102,21 +102,21 @@ const flower = [
 
   {
     id: 14,
-    img: `${baseURL}/secure-image/flowwhit.jpg`,
+    img: `${baseURL}/privatePhotos/flowwhit.jpg`,
     title: "",
     location: "new hampshire",
     link: "",
   },
   {
     id: 15,
-    img: `${baseURL}/secure-image/flowlilacgreen.jpg`,
+    img: `${baseURL}/privatePhotos/flowlilacgreen.jpg`,
     title: "lilac in green",
     location: "new hampshire",
     link: "",
   },
   {
     id: 16,
-    img: `${baseURL}/secure-image/flowpurp.jpg`,
+    img: `${baseURL}/privatePhotos/flowpurp.jpg`,
     title: "purple flower",
     location: "new hampshire",
     link: "",

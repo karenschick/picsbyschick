@@ -5,12 +5,12 @@ import "../../app.css";
 const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 
 const images = [
-  `${baseURL}/secure-image/wildloon.jpg`,
-  `${baseURL}/secure-image/landfog.jpg`,
-  `${baseURL}/secure-image/flower.jpg`,
-  `${baseURL}/secure-image/landva.jpg`,
-  `${baseURL}/secure-image/wildlizard.jpg`,
-  `${baseURL}/secure-image/wildloonbw.jpg`,
+  `${baseURL}/privatePhotos/wildloon.jpg`,
+  `${baseURL}/privatePhotos/landfog.jpg`,
+  `${baseURL}/privatePhotos/flower.jpg`,
+  `${baseURL}/privatePhotos/landva.jpg`,
+  `${baseURL}/privatePhotos/wildlizard.jpg`,
+  `${baseURL}/privatePhotos/wildloonbw.jpg`,
 ];
 
 function HomeCarousel() {
