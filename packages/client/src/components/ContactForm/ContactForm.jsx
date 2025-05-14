@@ -1,47 +1,82 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Form, Button, Modal } from "react-bootstrap"; // Import form and modal components from React Bootstrap
 
+// Functional component for the contact form
+function ContactForm({ onClose }) {
+  // useForm to manage form field values
+  const [state, handleSubmit] = useForm("manolnzl");
 
-const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
-
-
-const images = [
-  `${baseURL}/secure-image/wildloon.jpg`,
-  `${baseURL}/secure-image/landfog.jpg`,
-  `${baseURL}/secure-image/flower.jpg`,
-  `${baseURL}/secure-image/flowdarkyell.jpg`,
-  `${baseURL}/secure-image/landva.jpg`,
-  `${baseURL}/secure-image/landstjbw.jpg`,
-  `${baseURL}/secure-image/landwinskate.jpg`,
-];
-
-const BackgroundCarousel = ({ zIndex = -1 }) => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((i) => (i + 1) % images.length);
-    }, 8000);
-    return () => clearInterval(interval);
-  }, []);
-
+  if (state.succeeded) {
+    return (
+      <div className="text-center p-3">
+        <h5>Thank you for your message!</h5>
+        <Button variant="secondar" onClick={onClose}></Button>
+      </div>
+    );
+  }
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundImage: `url(${images[index]})`,
-        transition: "background-image 1s ease-in-out",
-        opacity: 0.1,
-        zIndex: zIndex,
-        pointerEvents: "none",
-      }}
-    ></div>
-  );
-};
+    <>
+      {/* Contact form layout using Bootstrap */}
+      <Form onSubmit={handleSubmit}>
+        {/* Name field */}
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type="text"
+            name="name"
+            placeholder="Enter full name"
+            required
+          ></Form.Control>
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
+        </Form.Group>
 
-export default BackgroundCarousel;
+        {/* Email field */}
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email Address</Form.Label>
+          <Form.Control
+            type="email"
+            name="email"
+            placeholder="Enter email address"
+            required
+          ></Form.Control>
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </Form.Group>
+
+        {/* Message field */}
+        <Form.Group className="mb-3" controlId="formBasicMessage">
+          <Form.Label>Message</Form.Label>
+          <Form.Control
+            type="textarea"
+            name="message"
+            placeholder="Enter message"
+            rows={4}
+            required
+          ></Form.Control>
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+        </Form.Group>
+
+        {/* Submit and Close buttons */}
+        <div className="d-flex justify-content-center">
+          <Button
+            className="m-4"
+            variant="secondary"
+            type="submit"
+            disabled={state.submitting}
+          >
+            Submit
+          </Button>
+          <Button className="m-4" variant="secondary" onClick={onClose}>
+            Close
+          </Button>
+        </div>
+      </Form>
+    </>
+  );
+}
+
+export default ContactForm;

@@ -12,12 +12,17 @@ import "./Navigation.css";
 const Navigation = ({ isModalOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [contactModalShow, setContactModalShow] = useState(false);
+  const handleShowModal = () => {
+    console.log("modal should open now");
+    setContactModalShow(true);
+  };
+  const handleCloseModal = () => setContactModalShow(false);
   const [animationReady, setAnimationReady] = useState(false); // Track when the animation should start
   const { theme } = useTheme();
   const isDark = theme === "dark";
 
   const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
-  
+
   const location = useLocation();
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
@@ -201,7 +206,7 @@ const Navigation = ({ isModalOpen }) => {
       {/* Contact Modal */}
       <Modal
         show={contactModalShow}
-        onHide={() => setContactModalShow(false)}
+        onHide={handleCloseModal}
         size="sm"
         centered
         backdrop="true"
